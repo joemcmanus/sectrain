@@ -1,5 +1,5 @@
 name: sectrain
-version: 2
+version: 3
 summary: A set of insecure web pages for training and demonstration purposes
 description: |
  A set of insecure web applications to illustrate simple coding errors in web pages. 
@@ -12,7 +12,7 @@ base: core18
 
 apps:
   sectrain:
-    command: bin/start.sh
+    command: bin/wrapper.sh 
     plugs:
       - network-bind
 
