@@ -9,24 +9,24 @@ Still to be done is include javascript, sqli and othe buffer overflows, should b
 
 ![alt_tag](https://github.com/joemcmanus/sectrain/blob/master/img/st-home.png)
 
-#Installation
+# Installation
 ----
 The simplest way to install sectrain is to use the snap 
 
     sudo snap install teamtime 
 
 ![alt_tag](https://github.com/joemcmanus/sectrain/blob/master/img/st-install.png)
-#Web Starting 
+# Web Starting 
 ----
 
     sectrain startweb 
 
-#Web Stopping
+# Web Stopping
 ----
 
     sectrain stopweb 
 
-#Web Usage 
+# Web Usage 
 ----
 
 Open your browser to your host on port 1984, then browse choose the secure or insecure links. Try an exploit such as :
@@ -39,7 +39,8 @@ You will see how sanitizing the input/output helps solve these issues.
 ![alt_tag](https://github.com/joemcmanus/sectrain/blob/master/img/st-py.png)
 
 
-#Python Buffer Overflows
+# Python Buffer Overflows
+----
 
 There are two examples to look at, pybuffgood and pybuffbad, sending in too long of a string breaks it. Simple, but still a good way to illustrate the point. 
 
