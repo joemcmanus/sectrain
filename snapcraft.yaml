@@ -1,0 +1,30 @@
+name: sectrain
+version: 2
+summary: A set of insecure web pages for training and demonstration purposes
+description: |
+ A set of insecure web applications to illustrate simple coding errors in web pages. 
+ To use run the command sectrain, and browse to your IP:1984 
+
+grade: stable
+confinement: strict
+base: core18
+
+
+apps:
+  sectrain:
+    command: bin/start.sh
+    plugs:
+      - network-bind
+
+parts:
+  sectrain:
+    plugin: dump
+    source: files/ 
+
+    stage-packages:
+      - php-cli 
+      - php
+      - python3
+      - python3-flask
+
+
