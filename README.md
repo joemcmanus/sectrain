@@ -38,8 +38,8 @@ You will see how sanitizing the input/output helps solve these issues.
 
 ![alt_tag](https://github.com/joemcmanus/sectrain/blob/master/img/st-py.png)
 
+
 #Python Buffer Overflows
-----
 
 There are two examples to look at, pybuffgood and pybuffbad, sending in too long of a string breaks it. Simple, but still a good way to illustrate the point. 
 
