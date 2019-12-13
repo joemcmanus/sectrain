@@ -1,5 +1,5 @@
 name: sectrain
-version: 3
+version: 5
 summary: A set of insecure web pages for training and demonstration purposes
 description: |
  A set of insecure web applications to illustrate simple coding errors in web pages. 
@@ -8,7 +8,6 @@ description: |
 grade: stable
 confinement: strict
 base: core18
-
 
 apps:
   sectrain:

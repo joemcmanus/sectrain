@@ -14,8 +14,15 @@ stopweb)
 	kill `ps -ef | grep php7.2 | grep -v grep | awk ' { print $2 } ' `
 	kill `ps -ef | grep server.py | grep -v grep | awk ' { print $2 } ' `
 ;;
+pybuffbad) 
+	$SNAP/bin/pyBuffBad.py $2 
+;;
+pybuffgood) 
+	$SNAP/bin/pyBuffGood.py $2 
+;;
+
 *)
-	echo " Usage sectrain startweb|stopweb"
+	echo " Usage sectrain startweb|stopweb|pybuffbad|pybuffgood"
 ;;
 
 esac	
