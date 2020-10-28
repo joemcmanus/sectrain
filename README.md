@@ -13,7 +13,7 @@ Still to be done is include javascript, sqli and othe buffer overflows, should b
 ----
 The simplest way to install sectrain is to use the snap 
 
-    sudo snap install teamtime 
+    sudo snap install sectrain 
 
 ![alt_tag](https://github.com/joemcmanus/sectrain/blob/master/img/st-install.png)
 # Web Starting 
