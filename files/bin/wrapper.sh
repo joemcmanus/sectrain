@@ -4,14 +4,14 @@
 case $1 in 
 
 startweb)
-	php7.2 -S 0.0.0.0:1984 -t $SNAP/phpweb  >/dev/null 2>&1 & 
+	php8.1 -S 0.0.0.0:1984 -t $SNAP/phpweb  >/dev/null 2>&1 & 
 	python3 $SNAP/pyweb/server.py >/dev/null 2>&1 & 
 	echo "Open your browser to this host on port 1984. eg: http://127.0.0.1:1984" 
 
 ;;
 
 stopweb) 
-	kill `ps -ef | grep php7.2 | grep -v grep | awk ' { print $2 } ' `
+	kill `ps -ef | grep php | grep -v grep | awk ' { print $2 } ' `
 	kill `ps -ef | grep server.py | grep -v grep | awk ' { print $2 } ' `
 ;;
 pybuffbad) 

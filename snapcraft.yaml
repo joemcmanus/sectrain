@@ -1,5 +1,5 @@
 name: sectrain
-version: 6
+version: '9.6'
 summary: A set of insecure web pages for training and demonstration purposes
 description: |
  A set of insecure web applications to illustrate simple coding errors in web pages. 
@@ -7,7 +7,11 @@ description: |
 
 grade: stable
 confinement: strict
-base: core18
+base: core22
+architectures:
+  - build-on: [arm64]
+  - build-on: [amd64]
+  - build-on: [armhf]
 
 apps:
   sectrain:
@@ -25,5 +29,3 @@ parts:
       - php
       - python3
       - python3-flask
-
-

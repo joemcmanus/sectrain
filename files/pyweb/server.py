@@ -17,6 +17,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import sys
+sys.path.append("/snap/sectrain/current/usr/lib/python3/dist-packages")
+
 from flask import Flask, Markup, request, make_response, escape, render_template
 
 app = Flask(__name__)
@@ -78,5 +81,5 @@ def about():
 	
 
 if __name__ == '__main__':
-        app.debug = True
+        app.debug = False
         app.run(host='0.0.0.0', port=1985)
